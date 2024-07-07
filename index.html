@@ -5,27 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Head_land</title>
-    <style>
-        body{
+   <style>
+        body {
             background-color: #ccc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        h1{
+        h1 {
             text-align: center;
+            margin-top: 20px;
         }
-        h2{
+        h2 {
             background-color: #6c63ff;
-            border: 2px solid rgb(12, 12, 12);
+            border: 2px solid #0c0c0c;
             text-align: center;
-            width: 50%;
+            width: 80%;
+            max-width: 500px;
             padding: 20px;
-            position: relative;
-            left: 12em;
-            top: 1em;
+            margin: 10px 0;
             border-radius: 10px;
         }
-        a{
+        a {
             text-decoration: none;
             color: whitesmoke;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            h2 {
+                width: 90%;
+                padding: 15px;
+            }
         }
     </style>
 </head>
