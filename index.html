@@ -1,51 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Head_land</title>
-   <style>
+    <title>HOD_land</title>
+    <style>
         body {
-            background-color: #ccc;
-            font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* Light background color */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 20px;
         }
+
+        .container {
+            border: 2px solid #00796b; /* Container border color */
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white; /* Background color for container */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            max-width: 600px; /* Max width for container */
+            margin: 0 auto; /* Center the container */
+            width: 90%; /* Make container responsive */
+        }
+
         h1 {
             text-align: center;
-            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #333;
         }
-        h2 {
-            background-color: #6c63ff;
-            border: 2px solid #0c0c0c;
+
+        .styled-button {
+            background-color: #00796b; /* Button background color */
+            border: 3px solid #b2dfdb;
             text-align: center;
-            width: 80%;
-            max-width: 500px;
-            padding: 20px;
-            margin: 10px 0;
+            width: 100%; /* Full width for button */
+            padding: 15px; /* Slightly smaller padding */
             border-radius: 10px;
-        }
-        a {
-            text-decoration: none;
+            display: block; /* Block display for full width */
+            margin: 10px 0; /* Margin for buttons */
             color: whitesmoke;
-            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        @media (max-width: 600px) {
-            h2 {
-                width: 90%;
-                padding: 15px;
-            }
+
+        .styled-button:hover {
+            background-color: #004d40; /* Darker shade on hover */
+        }
+
+        .header-img {
+            display: block;
+            margin: 0 auto 20px; /* Center image */
+            max-width: 100px;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>CAE SIMULATION TRAINING PVT LTD</h1>
-    <h2><a href="https://3nobita.github.io/10k_Head_addCard/">ADD Card's</a></h2>
-    <h2><a href="https://3nobita.github.io/10k_head_hodres/">HOD's Responce</a></h2>
-    <h2><a href="https://3nobita.github.io/10k_hod_itemREQ/">Stationery Requests</a></h2>
+    <h1>CAE SIMULATION TRAINING PVT LTD</h1>
+    <div class="container">
+        <button class="styled-button" onclick="window.location.href='https://3nobita.github.io/10k_Head_addCard/'">ADD Card's</button>
+        <button class="styled-button" onclick="window.location.href='https://3nobita.github.io/10k_HOD_req/'">HOD's Travel List</button>
+        <button class="styled-button" onclick="window.location.href='https://3nobita.github.io/10k_hod_itemREQ/'">Stationery List</button>
+        
+    </div>
 </body>
 </html>
